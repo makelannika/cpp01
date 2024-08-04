@@ -6,11 +6,11 @@
 #    By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/05 00:10:57 by amakela           #+#    #+#              #
-#    Updated: 2024/08/05 01:13:20 by amakela          ###   ########.fr        #
+#    Updated: 2024/08/05 02:22:26 by amakela          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	zombie
+NAME		=	BraiiiiiiinnnzzzZ
 
 CPPFILES	=	src/main.cpp		src/Zombie.cpp		\
 				src/newZombie.cpp	src/randomChump.cpp

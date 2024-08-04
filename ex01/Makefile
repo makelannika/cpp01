@@ -6,11 +6,11 @@
 #    By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/05 01:22:49 by amakela           #+#    #+#              #
-#    Updated: 2024/08/05 01:57:02 by amakela          ###   ########.fr        #
+#    Updated: 2024/08/05 02:22:06 by amakela          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	zombieHorde
+NAME		=	Moarbrainz!
 
 CPPFILES	=	src/main.cpp	src/Zombie.cpp	src/zombieHorde.cpp
  
