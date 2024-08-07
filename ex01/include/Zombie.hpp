@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 01:24:29 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/05 01:59:57 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/07 12:29:36 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ class Zombie
     public:
         Zombie();
         Zombie(std::string name);
+		
         void announce();
-
 };
 
 Zombie* zombieHorde(int n, std::string name);
