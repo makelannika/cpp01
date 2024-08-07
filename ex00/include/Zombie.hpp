@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 00:16:42 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/05 01:18:32 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/07 12:16:05 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,13 @@ class Zombie
     public:
         Zombie();
         Zombie(std::string name);
-        void announce();
         ~Zombie();
+		
+        void announce();
 
 };
         
 Zombie* newZombie(std::string name);
-void randomChump(std::string name);
+void 	randomChump(std::string name);
 
 #endif

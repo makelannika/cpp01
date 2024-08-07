@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 00:21:57 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/05 01:17:53 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/07 12:10:36 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,7 @@
 
 Zombie::Zombie() {}
 
-Zombie::Zombie(std::string name)
-{
-    this->name = name;
-}
+Zombie::Zombie(std::string name) : name(name) {}
 
 void Zombie::announce() 
 {
