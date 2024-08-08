@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 13:03:33 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/07 14:18:57 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/08 18:30:42 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define HUMANB_HPP
 
 #include "Weapon.hpp"
+#include <iostream>
+#include <string>
 
 class HumanB {
 	private:

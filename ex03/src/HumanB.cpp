@@ -6,12 +6,11 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 13:05:30 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/07 15:39:27 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/08 18:30:49 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/HumanB.hpp"
-#include <iostream>
 
 HumanB::HumanB(std::string name) : name(name), weapon(NULL) {}
 
