@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Copier.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/07 16:56:28 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/13 19:54:44 by amakela          ###   ########.fr       */
+/*   Created: 2024/08/13 19:15:35 by amakela           #+#    #+#             */
+/*   Updated: 2024/08/13 19:52:20 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Copier.hpp"
+#ifndef FILE_HPP
+# define FILE_HPP
 
-int	main(int argc, char **argv)
-{
-	if (argc != 4) {
-		std::cout << "Error: program takes 3 arguments" << std::endl;
-		return (1);
-	}
-	Copier	copier;
-	if (!copier.openInFile(argv[1]))
-		return 1;
-	if (!copier.openOutFile(argv[1]))
-		return 1;
-	copier.copyAndReplace(argv[2], argv[3]);
-	return 0;
-}
+#include <string>
+#include <fstream>
+#include <iostream>
+
+class Copier {
+    private:
+        std::ifstream   in;
+        std::ofstream   out;
+
+    public:
+        ~Copier();
+
+        bool    openInFile(char *filename);
+        bool    openOutFile(char *filename);
+        void    copyAndReplace(char *to_replace, char *replacement);
+};
+
+#endif
