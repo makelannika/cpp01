@@ -6,12 +6,12 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 19:15:35 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/13 19:52:20 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/13 22:27:32 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FILE_HPP
-# define FILE_HPP
+#ifndef COPIER_HPP
+# define COPIER_HPP
 
 #include <string>
 #include <fstream>
