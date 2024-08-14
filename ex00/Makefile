@@ -6,11 +6,11 @@
 #    By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/05 00:10:57 by amakela           #+#    #+#              #
-#    Updated: 2024/08/05 02:22:26 by amakela          ###   ########.fr        #
+#    Updated: 2024/08/14 21:09:40 by amakela          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	BraiiiiiiinnnzzzZ
+NAME		=	braiiiiiiinnnzzzZ
 
 CPPFILES	=	src/main.cpp		src/Zombie.cpp		\
 				src/newZombie.cpp	src/randomChump.cpp
@@ -29,7 +29,7 @@ FLAGS		=	-Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	$(CC) $(OFILES) -o $(NAME)
+	$(CC) $(FLAGS) $(OFILES) -o $(NAME)
 
 clean:
 	rm -f $(OFILES)
