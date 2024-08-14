@@ -6,14 +6,13 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 23:19:12 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 00:18:19 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 22:10:20 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Harl.hpp"
 
-int main()
-{
+int main() {
     Harl harl;
 
     harl.complain("DEBUG");

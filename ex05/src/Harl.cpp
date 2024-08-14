@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 23:19:14 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 00:19:18 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 22:08:46 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,3 @@ void    Harl::complain( std::string level ) {
     }
     std::cout << "Invalid level" << std::endl;
 }
-

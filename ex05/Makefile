@@ -6,11 +6,11 @@
 #    By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/13 23:17:39 by amakela           #+#    #+#              #
-#    Updated: 2024/08/13 23:18:13 by amakela          ###   ########.fr        #
+#    Updated: 2024/08/14 22:09:02 by amakela          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	Harl2.0
+NAME		=	harl2.0
 
 CPPFILES	=	src/main.cpp	src/Harl.cpp
  
@@ -28,7 +28,7 @@ FLAGS		=	-Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	$(CC) $(OFILES) -o $(NAME)
+	$(CC) $(FLAGS) $(OFILES) -o $(NAME)
 
 clean:
 	rm -f $(OFILES)
