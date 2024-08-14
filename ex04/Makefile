@@ -6,11 +6,11 @@
 #    By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/07 15:44:33 by amakela           #+#    #+#              #
-#    Updated: 2024/08/13 19:51:28 by amakela          ###   ########.fr        #
+#    Updated: 2024/08/14 21:40:42 by amakela          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	SedIsForLosers
+NAME		=	sedIsForLosers
 
 CPPFILES	=	src/main.cpp	src/Copier.cpp
  
@@ -28,7 +28,7 @@ FLAGS		=	-Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	$(CC) $(OFILES) -o $(NAME)
+	$(CC) $(FLAGS) $(OFILES) -o $(NAME)
 
 clean:
 	rm -f $(OFILES)

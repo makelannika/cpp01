@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 19:15:35 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/13 22:27:32 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 21:41:59 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ class Copier {
     public:
         ~Copier();
 
-        bool    openInFile(char *filename);
-        bool    openOutFile(char *filename);
-        void    copyAndReplace(char *to_replace, char *replacement);
+        bool    openInFile( char *filename );
+        bool    openOutFile( char *filename );
+        void    copyAndReplace( char *to_replace, char *replacement );
 };
 
 #endif

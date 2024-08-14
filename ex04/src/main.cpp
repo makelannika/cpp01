@@ -6,14 +6,13 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 16:56:28 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/13 22:29:39 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 21:50:01 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Copier.hpp"
 
-int	main(int argc, char **argv)
-{
+int	main(int argc, char** argv) {
 	if (argc != 4) {
 		std::cout << "Error: invalid arguments" << std::endl;
 		return (1);
