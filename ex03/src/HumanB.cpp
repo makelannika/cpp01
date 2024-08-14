@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 13:05:30 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/08 18:30:49 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 21:33:17 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,13 @@
 
 HumanB::HumanB(std::string name) : name(name), weapon(NULL) {}
 
-void	HumanB::attack()
-{
+void	HumanB::attack() {
 	if (this->weapon)
 		std::cout << name << " attacks with their " << weapon->getType() << std::endl;
 	else
 		std::cout << name << " is not armed" << std::endl;
 }
 
-void	HumanB::setWeapon(Weapon& weapon)
-{
+void	HumanB::setWeapon(Weapon& weapon) {
 	this->weapon = &weapon;
 }

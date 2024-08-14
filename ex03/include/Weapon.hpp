@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/06 13:49:52 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/07 15:23:45 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 21:30:39 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,16 @@
 
 #include <string>
 
-class Weapon
-{
+class Weapon {
     private:
         std::string type;
     
     public:
         Weapon();
-        Weapon(std::string type);
+        Weapon( std::string type );
 		
         const   std::string& getType();
-        void    setType(std::string type);
+        void    setType( std::string type );
 };
 
 #endif

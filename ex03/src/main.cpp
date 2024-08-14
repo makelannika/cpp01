@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/06 15:55:48 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/07 15:21:48 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 21:37:29 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 #include "../include/HumanA.hpp"
 #include "../include/HumanB.hpp"
 
-int main()
-{
+int main() {
 	{
 		Weapon club = Weapon("crude spiked club");
 		HumanA bob("Bob", club);
