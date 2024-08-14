@@ -6,7 +6,7 @@
 #    By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/14 12:12:12 by amakela           #+#    #+#              #
-#    Updated: 2024/08/14 12:14:55 by amakela          ###   ########.fr        #
+#    Updated: 2024/08/14 22:11:43 by amakela          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ FLAGS		=	-Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	$(CC) $(OFILES) -o $(NAME)
+	$(CC) $(FLAGS) $(OFILES) -o $(NAME)
 
 clean:
 	rm -f $(OFILES)

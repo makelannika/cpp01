@@ -6,13 +6,13 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 12:13:20 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 12:35:57 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 22:13:03 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Harl.hpp"
 
-void    Harl::debug(void ) {
+void    Harl::debug( void ) {
     std::cout << "I love having extra bacon for my"
     " 7XL-double-cheese-triple-pickle-specialketchup burger."
     " I really do!" << std::endl;
