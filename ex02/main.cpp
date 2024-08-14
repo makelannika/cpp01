@@ -6,15 +6,14 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 02:05:05 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/07 12:46:28 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/14 21:27:47 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main() {
     std::string str = "HI THIS IS BRAIN";
     std::string *str_ptr = &str;
     std::string &str_ref = str;
