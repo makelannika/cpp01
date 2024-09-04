@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 19:15:35 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 21:41:59 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 13:11:06 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,12 @@ class Copier {
         std::ofstream   out;
 
     public:
+        Copier();
         ~Copier();
 
         bool    openInFile( char *filename );
         bool    openOutFile( char *filename );
-        void    copyAndReplace( char *to_replace, char *replacement );
+        bool    copyAndReplace( char *to_replace, char *replacement );
 };
 
 #endif

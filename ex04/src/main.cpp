@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 16:56:28 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 21:50:01 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 13:11:40 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,10 @@ int	main(int argc, char** argv) {
 	}
 	Copier	copier;
 	if (!copier.openInFile(argv[1]))
-		return 1;
+		return (1);
 	if (!copier.openOutFile(argv[1]))
-		return 1;
-	copier.copyAndReplace(argv[2], argv[3]);
-	return 0;
+		return (1);
+	if (!copier.copyAndReplace(argv[2], argv[3]))
+		return (1);
+	return (0);
 }

@@ -6,11 +6,13 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 16:55:28 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 21:42:08 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 13:24:35 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Copier.hpp"
+
+Copier::Copier() {}
 
 bool    Copier::openInFile( char *filename ) {
     std::string infile = filename;
@@ -34,9 +36,13 @@ bool    Copier::openOutFile( char*filename ) {
     return (true);
 }
     
-void    Copier::copyAndReplace( char *s1, char *s2 ) {
+bool    Copier::copyAndReplace( char *s1, char *s2 ) {
     std::string to_replace = s1;
     std::string replacement = s2;
+    if (to_replace.empty()) {
+        std::cout << "Error: s1 cannot be empty" << std::endl;
+        return false;
+    }
     std::size_t pos = 0;
     std::string buffer;
 
@@ -49,9 +55,12 @@ void    Copier::copyAndReplace( char *s1, char *s2 ) {
 		pos = 0;
 		out << buffer << std::endl;
 	}
+    return true;
 }
 
 Copier::~Copier() {
-    in.close();
-    out.close();
+    if (in.is_open())
+        in.close();
+    if (out.is_open())
+        out.close();
 }
