@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 00:16:42 by amakela           #+#    #+#             */
-/*   Updated: 2024/09/04 14:13:49 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 19:31:14 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Zombie {
         
         Zombie( std::string name);
 		
-        void announce();
+        void announce( void );
 };
         
 Zombie* newZombie( std::string name );
