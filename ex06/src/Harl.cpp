@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 12:13:20 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/30 22:07:05 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 11:51:23 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,36 +34,24 @@ void    Harl::error( void ) {
 
 void    Harl::complain( char* level ) {
 	std::string levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	void (Harl::*complaints[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	
 	for (int i = 0; i < 4; i++)
 		if (level == levels[i]) {
-			
-    switch(i) {
-        case DEBUG:
-			for (int i = 0; i < 4; i++) {
-				(this->*complaints[i])();
-				std::cout << std::endl;
-			}
-            break;
-        case INFO:
-			for (int i = 1; i < 4; i++) {
-				(this->*complaints[i])();
-				std::cout << std::endl;
-			}
-            break;
-        case WARNING:
-			for (int i = 2; i < 4; i++) {
-				(this->*complaints[i])();
-				std::cout << std::endl;
-			}
-            break;
-        case ERROR:
-            (this->*complaints[i])();
-			std::cout << std::endl;
-            break;
-        return ;
-		}
-    }
+        switch(i) {
+            case DEBUG:
+                debug();
+                std::cout << std::endl;
+            case INFO:
+                info();
+                std::cout << std::endl; 
+            case WARNING:
+                warning();
+                std::cout << std::endl;
+            case ERROR:
+                error();
+                std::cout << std::endl;
+            return ;
+            }
+        }
 	std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 }
