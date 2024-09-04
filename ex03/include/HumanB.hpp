@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 13:03:33 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 21:32:30 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 14:02:05 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class HumanB {
 		
 	public:
 		HumanB( std::string name );
+		~HumanB();
 
 		void	attack();
 		void	setWeapon( Weapon& weapon );

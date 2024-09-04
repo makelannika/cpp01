@@ -6,11 +6,15 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 12:13:20 by amakela           #+#    #+#             */
-/*   Updated: 2024/09/04 11:51:23 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 13:54:06 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Harl.hpp"
+
+Harl::Harl() {}
+
+Harl::~Harl() {}
 
 void    Harl::debug( void ) {
     std::cout << "[ DEBUG ]" << std::endl << "I love having extra bacon for my"

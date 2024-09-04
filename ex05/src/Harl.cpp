@@ -6,11 +6,15 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 23:19:14 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 22:13:26 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 13:54:44 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Harl.hpp"
+
+Harl::Harl() {}
+
+Harl::~Harl() {}
 
 void    Harl::debug( void ) {
     std::cout << "I love having extra bacon for my"
@@ -39,7 +43,7 @@ void    Harl::complain( std::string level ) {
     void (Harl::*complaints[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
     for (int i = 0; i < 4; i++) {
-        if (levels[i] == level) {
+        if (level == levels[i]) {
             (this->*complaints[i])();
             return ;
         }

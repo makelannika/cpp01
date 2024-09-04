@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 12:13:15 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/30 21:48:50 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 13:53:28 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Harl {
 		enum {DEBUG, INFO, WARNING, ERROR};
 
     public:
+        Harl();
+        ~Harl();
         void    complain( char* level );
 };
 
