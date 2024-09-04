@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 00:16:42 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/14 21:10:46 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/04 14:13:49 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Zombie {
     public:
         Zombie();
         ~Zombie();
+        
         Zombie( std::string name);
 		
         void announce();
